@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>Minesweeper</title>
+	</head>
+	<body>
+		<div>
+			<h1>Minesweeper</h1>
+			<div class="alert">
+                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                 You clicked the bomb!
+            </div>
+		    <div class="grid"></div>
+		    <h1>Flags Left : <strong class="count">20</strong></h1>
+		    <button type="button" class="play-btn" style="background-color:#000080;">PLay Again</button>
+		</div>
+		<div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            	<div class="modal-header">
+                    <h1 class="modal-title">Minesweeper</h1>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <img src="newmines.png" alt="Minesweeper"/>
+                </div>
+                <div>
+                  <h1 class="lost-or-win">You Win!</h1>
+                  <div class="modal-footer" style="width:200px; height:150px">
+                    <button type="button"
+                      class="close-btn" style="float: left; background-color:red;" onclick="setDisplay()">Close</button>
+                    <button type="button" class="try-btn" style="float: left; background-color:#000080;">Try Again</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+		<script src="main.js">
+			
+		</script>
+	</body>
+</html>
